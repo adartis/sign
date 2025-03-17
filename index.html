@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gareth's event sign up sheet</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Audio element to automatically play the background MP3 on page load.
+       Replace 'path/to/your/audio.mp3' with the actual file path or URL. -->
+  <audio src="tune.mp3" autoplay loop></audio>
+
+  <!-- Main title -->
+  <h1>Gareth's event sign up sheet</h1>
+
+  <!-- Container for event cards -->
+  <div id="events-container"></div>
+
+  <!-- Modal for the sign-up form (hidden by default) -->
+  <div id="signup-modal" class="modal-overlay">
+    <div class="modal">
+      <h2>Sign Up for the Event</h2>
+      <form id="signup-form">
+        <!-- Form group for entering the attendee's name -->
+        <div class="form-group">
+          <label for="attendee-name">Your Name:</label>
+          <input type="text" id="attendee-name" name="attendee-name" required>
+        </div>
+        <!-- Submit button to add the attendee -->
+        <button type="submit">Submit</button>
+        <!-- Cancel button to close the modal without signing up -->
+        <button type="button" id="cancel-btn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
